@@ -1,14 +1,11 @@
 // Задача 23. Дано масив літер. Сформувати рядок, який складається тільки з голосних літер.
 
-const lettersArr = ['a', 'b', 'c', 'd', 'e', 'f'];
+const leterrsArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'e'];
 const vowelArr = ['a', 'e', 'i', 'o', 'u', 'y'];
 
-compareFn = (startArr, arrToCompare) => {
-    let newArr = startArr.filter((item, index, arr) => {
-        if (startArr[item] === arrToCompare[item]) {
-
-        }
-        return newArr
-    })
+getVowels = (firstArr, secondArr) => {
+    let newArray = firstArr.filter((item) => secondArr.indexOf(item) !== -1);
+    return newArray;
 }
-console.log(compareFn(lettersArr, vowelArr));
+const result = getVowels(leterrsArr, vowelArr);
+console.log(result);
