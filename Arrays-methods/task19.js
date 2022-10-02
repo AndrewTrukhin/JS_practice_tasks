@@ -3,9 +3,11 @@
 
 const personAgeArr = [];
 const recruitAge = 60;
+const minAge = 30;
+const maxAge = 70;
 
 for (let i = 0; i < 10; i++) {
-    personAgeArr[i] = Math.ceil(Math.random() * (70 - 30) + 30);
+    personAgeArr[i] = Math.ceil(Math.random() * (maxAge - minAge) + minAge);
 }
 console.log(personAgeArr);
 
