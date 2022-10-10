@@ -1,31 +1,34 @@
 /* Задача 11. Дано числовий масив розмірності N.  Вважати, що його елементи утворюють числову послідовність, 
 утворити новий масив що містить найдовшу зростаючу підпослідовність.*/
 
-const array = [1, 2, 3, 4, 5, 9, 105, 1, 2, 3, 4, 10];
-let finalArray = [];
-let currentArray = [];
-let biggestNum = 0;
+const array = [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15];
+let matrixArray = [];
+let i = 0;
+let firstElement = array[0];
 
-for (let i = 0; i < array.length; i++) {
+matrixArray[i] = [firstElement]; // в багатовимірний масив вкладаю новий масив
 
-    currentArray = [];
-    biggestNum = currentArray[0] = array[i];
+for (let j = i + 1; j < array.length; j++) { // буду порівнювати нуль з усіма елементами вихідного масиву
 
-    for (let j = i + 1, k = 0; j < array.length; j++) {
+    let lastArrOfSequences = matrixArray[matrixArray.length - 1];               // змінна для останнього підмасиву
+    let lastElemOfLastArr = lastArrOfSequences[lastArrOfSequences.length - 1];  // змінна для останнього елемента останнього підмасиву
 
-        if (array[j] > biggestNum) {
-            biggestNum = array[j];
-            k++
-            currentArray[k] = biggestNum;
+    if (array[j] > lastElemOfLastArr) { // якщо наступний елемент вихідного масиву більше ніж останній елемент останнього підмасиву
+        let tempArray;
+        tempArray = [...lastArrOfSequences, array[j]];  // то скопіюємо старий підмасив для створення нового плюс додамо більший елемент
+        matrixArray[matrixArray.length] = tempArray;    // у багатовимірний масив додамо останнім елементом новий підмасив з доданим еле-м
+    }
+    else {
+        for (let k = matrixArray.length - 1; k >= 0; k--) { // інакше перевіряєм від останнього підмасиву
+            let currArr = matrixArray[k];                   // змінна для останнього підмасиву
+            let currLastElem = currArr[currArr.length - 1]; // змінна для останнього елемента останнього підмасиву
+            if (array[j] > currLastElem) {                  // якщо число вихідно масиву більше ніж ост. елем ост підмасиву
+                tempArray = [...currArr, array[j]];         // скопіюємо в тимчасову змінну цей підмасив цієї ітерації
+                matrixArray[k + 1] = tempArray;             // та перезапишемо наступний підмасив тимчасовою змінною
+                break                                       
+            }
         }
     }
-
-    if (currentArray.length > finalArray.length) {
-        for (let l = 0; l < currentArray.length; l++) {
-            finalArray[l] = currentArray[l];
-        }
-    }
-    //console.log(`${i}---${currentArray}`)
-
 }
-console.log(finalArray);
+let LIS = matrixArray[matrixArray.length - 1];
+console.log(LIS);
