@@ -1,0 +1,73 @@
+body {
+    background-color: rgba(84, 120, 134, 0.609);
+}
+
+h1 {
+    font-style: italic;
+}
+
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
+input {
+    position: relative;
+    vertical-align: middle;
+}
+
+.section {
+    margin-top: 5px;
+    font-family: fantasy;
+    font-size: larger;
+    font-style: italic;
+}
+
+.dishes {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.paymentSection {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+.checkbox {
+    transform: scale(1.5);
+}
+
+.button {
+    border-radius: 10px;
+    padding: 5px;
+    width: 5em;
+    line-height: 1.5;
+    background-color: cadetblue;
+    outline: 1px solid;
+    outline-color: #337AB7;
+    outline-offset: 0px;
+    transition: all 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+    border: 2px solid #BFE2FF;
+}
+
+.button:hover {
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    color: #FFF;
+}
+
+#payment {
+    width: 15em;
+    vertical-align: text-bottom;
+    border-radius: 10px;
+    outline: 1px solid;
+    outline-color: #337AB7;
+    line-height: 1.5;
+}

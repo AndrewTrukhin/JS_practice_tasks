@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task5.css" rel="stylesheet" type="text/css">
+    <script src="task5.js"></script>
+    <title>Ordering dishes</title>
+</head>
+
+<body>
+    <h1>Menu</h1>
+    <form action="/form/submit" method="post">
+        <div>
+            <p class="section">First dishes :</p>
+            <p class="dishes">
+                <label for="mushroomSoup">Mushroom soup - 25.50</label>
+                <input class="checkbox" type="checkbox" name="dishes" value="25.50" id="mushroomSoup">
+            </p>
+            <p class="dishes">
+                <label for="borshch">Borshch - 30.00</label>
+                <input class="checkbox" type="checkbox" name="dishes" value="30.00" id="borshch">
+            </p>
+            <p class="dishes">
+                <label for="bograch">Bograch - 28.00</label>
+                <input class="checkbox" type="checkbox" name="dishes" value="28.00" id="bograch">
+            </p>
+        </div>
+        <div>
+            <p class="section">Second dishes :</p>
+            <p class="dishes">
+                <label for="potatoAndMeat">Potato with meat - 40.70</label>
+                <input class="checkbox" type="checkbox" name="dishes" value="40.70" id="potatoAndMeat">
+            </p>
+            <p class="dishes">
+                <label for="pasta">Pasta - 50.00</label>
+                <input class="checkbox" type="checkbox" name="dishes" value="50.00" id="pasta">
+            </p>
+            <p class="dishes">
+                <label for="salmon">Salmon - 50.00</label>
+                <input class="checkbox" type="checkbox" name="dishes" value="50.00" id="salmon">
+            </p>
+        </div>
+        <div>
+            <p class="section">Dessert :</p>
+            <p class="dishes">
+                <label for="chocoPudding">Choco Pudding - 25.20</label>
+                <input class="checkbox" type="checkbox" name="dishes" value="25.20" id="chocoPudding">
+            </p>
+            <p class="dishes">
+                <label for="praline">Praline - 12.00</label>
+                <input class="checkbox" type="checkbox" name="dishes" value="12.00" id="praline">
+            </p>
+            <p class="dishes">
+                <label for="grillage">Grillage - 33.50</label>
+                <input class="checkbox" type="checkbox" name="dishes" value="33.50" id="grillage">
+            </p>
+            <p class="dishes">
+                <input type="button" value="Count" class="button" id="count" onclick="getTotalPayment()">
+            </p>
+            <p class="dishes">
+                <input type="reset" value="Reset" class="button" id="reset" onclick="resetCheckboxes()">
+            </p>
+        </div>
+        <div>
+            <p class="paymentSection">Total for payment:</p>
+            <p class="paymentSection">
+                <input type="text" name="dishes" id="payment">
+                <label for="payment">UAH</label>
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>

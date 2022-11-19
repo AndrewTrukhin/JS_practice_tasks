@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task4.css" rel="stylesheet" type="text/css">
+    <script src="task4.js"></script>
+    <title>Online simple calculator</title>
+</head>
+
+<body>
+    <div>
+        <p>
+            <input type="text" class="screen" id="calculationScreen">
+        </p>
+        <p>
+            <input type="text" class="screen" id="resultScreen">
+        </p>
+        <table>
+            <tr>
+                <td><input type="button" value="C" onclick="clearScreen()"></td>
+                <td><input type="button" value="delete" onclick="deleteLastDigit('delete')"></td>
+                <td><input type="button" value="-" onclick="addDigits(value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="+" onclick="addDigits(value)"></td>
+                <td><input type="button" value="/" onclick="addDigits(value)"></td>
+                <td><input type="button" value="x" onclick="addDigits('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="addDigits(value)"></td>
+                <td><input type="button" value="2" onclick="addDigits(value)"></td>
+                <td><input type="button" value="3" onclick="addDigits(value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="addDigits(value)"></td>
+                <td><input type="button" value="5" onclick="addDigits(value)"></td>
+                <td><input type="button" value="6" onclick="addDigits(value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="addDigits(value)"></td>
+                <td><input type="button" value="8" onclick="addDigits(value)"></td>
+                <td><input type="button" value="9" onclick="addDigits(value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="addDigits(value)"></td>
+                <td><input type="button" value="." onclick="addDigits(value)"></td>
+                <td><input type="button" value="=" onclick="makeCalculations(value)"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

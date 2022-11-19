@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task12.css" rel="stylesheet" type="text/css">
+    <title>Employees` salary list maker</title>
+</head>
+
+<body class="body">
+    <h1 class="h1">Welcome to employees` salary list maker</h1>
+    <form action="/form/submit" method="post" class="container">
+        <div class="div">
+            <p class="paragraph">
+                <label for="name" class="label">First, second and middle name of employee:</label>
+                <input type="text" class="input" id="name">
+            </p>
+            <p class="paragraph">
+                <label for="position" class="label">Position of employee:</label>
+                <input type="text" class="input" id="position">
+            </p>
+            <p class="paragraph">
+                <label for="salary" class="label">Salary (UAH) of employee :</label>
+                <input type="number" class="input" id="salary">
+            </p>
+            <p class="buttonParagraph">
+                <button type="button" class="button" id="addButton">Add to the list</button>
+            </p>
+            <p class="buttonParagraph">
+                <button type="button" class="button" id="filterButton">Filter list by salary < 3000</button>
+            </p>
+        </div>
+    </form>
+    <div>
+        <ol class="ol" id="list"></ol>
+    </div>
+    <script src="task12.js"></script>
+</body>
+
+</html>

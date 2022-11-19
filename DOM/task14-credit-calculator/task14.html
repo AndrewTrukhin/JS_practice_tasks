@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task14.css" rel="stylesheet" type="text/css">
+    <title>Online credit calculator</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <h1 class="h1">Online credit calculator</h1>
+        <p class="paragraph">Client name :</p>
+        <input type="text" placeholder="Print your first and second name..." class="input" id="name">
+        <p class="paragraph">Credit amount :</p>
+        <input type="text" placeholder="Print amount of credit that You need..." min="1" max="999999" class="input" id="creditSum">
+        <p class="paragraph">Credit rate :</p>
+        <input type="text" placeholder="Choose your credit rate..." class="input" id="rate">
+        <p class="paragraph">Credit month quantity : <output id="periodOutput">0</output></p>
+        <input type="range" min="0" max="12" value="0" class="input" id="period">
+        <button type="button" class="button" id="calcButton">Count total payment</button>
+        <p class="paragraph">Total payment :</p>
+        <input type="text" class="input" id="result">
+    </div>
+    <script src="task14.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task11.css" rel="stylesheet" type="text/css">
+    <title>To-do list</title>
+</head>
+
+<body class="body">
+    <h1 class="h1">Create your to-do list</h1>
+
+    <div class="div">
+        <label for="taskList">Print your task :</label>
+        <input type="text" class="input" placeholder="Tasks to be done..." id="task">
+        <input type="button" class="button" value="Add task" id="add" onclick="addAndDeleteTask()">
+    </div>
+    <div id="listDiv">
+        <ol id="ol"></ol>
+    </div>
+    <script src="task11.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+html,
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    margin: 0 auto;
+    background-color: rgb(234, 229, 229);
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+    padding: 1%;
+    background-color: skyblue;
+}
+
+.h1 {
+    text-align: center;
+    align-self: center;
+    flex: 5;
+    color: rgb(215, 116, 215);
+    font-size: xxx-large;
+    font-style: oblique;
+}
+
+.headImg {
+    display: block;
+    height: 150px;
+    width: 300px;
+    border: 1px solid #BFE2FF;
+}
+
+.nav {
+    height: 60px;
+    flex: 100%;
+    padding: 1.5%;
+    background-color: steelblue;
+    border: 2px solid rgb(24, 67, 90);
+    margin-top: 10px;
+}
+
+.ul {
+    display: flex;
+    flex: 2;
+}
+
+.navLi {
+    display: inline;
+    text-align: center;
+    align-self: center;
+    flex: 1;
+    height: 50px;
+}
+
+.select {
+    height: 30px;
+}
+
+.option {
+    text-align: center;
+}
+
+.button,
+.select {
+    height: 30px;
+    width: 10em;
+    text-decoration: none;
+    border: 2px solid #BFE2FF;
+    position: relative;
+    overflow: hidden;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Тahoma, sans-serif;
+    background: #60a3de;
+    transition: box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+    color: #FFF;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, transparent, rgba(191, 226, 255, 0.3), transparent);
+    transition: left 0.7s;
+}
+
+.button:hover:before,
+.button:active:before,
+.button:focus:before {
+    left: 100%;
+}
+
+.main {
+    display: flex;
+    background-color: skyblue;
+}
+
+.form {
+    flex: 4;
+    padding: 1.5%;
+    margin: 10px;
+    background-color: steelblue;
+    border: 2px solid rgb(24, 67, 90);
+}
+
+.label {
+    position: absolute;
+    font-size: larger;
+}
+
+.input {
+    position: relative;
+    margin-left: 13em;
+}
+
+.input[type=range] {
+    margin-left: 13em;
+    border: solid 3px #82CFD0;
+    height: 7px;
+    width: 350px;
+}
+
+.aside {
+    flex: 1;
+    margin: 10px;
+    padding: 1%;
+    text-align: -webkit-center;
+    background-color: steelblue;
+    border: 2px solid rgb(24, 67, 90);
+}
+
+.purpose {
+    display: block;
+    align-self: center;
+    width: 50%;
+    margin-top: 10px;
+}
+
+aside img {
+    max-width: 100%;
+}
+
+.footer {
+    background-color: rgb(109, 167, 190);
+}
+
+.footerDiv {
+    margin: 10px;
+    padding: 1%;
+    background-color: steelblue;
+    border: 2px solid rgb(24, 67, 90);
+}
+
+.footerParagraph {
+    text-align: center;
+    align-self: center;
+}
+
+.updateLabel,
+.footerInput,
+#updateButton {
+
+    vertical-align: middle;
+}
+
+.footerInput {
+    height: 25px;
+    width: 15em;
+}
+
+.email {
+    vertical-align: bottom;
+}

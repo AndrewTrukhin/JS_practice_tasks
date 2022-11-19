@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task9.css" rel="stylesheet" type="text/css">
+    <title>Average mark counter</title>
+</head>
+
+<body class="body">
+    <h1 class="h1">Welcome to average mark counter</h1>
+    <form action="/form/submit" method="post" id="form">
+        <div class="div">
+            <p class="p">
+                <label for="marksQty" class="label">Enter quantity of marks :</label>
+                <input type="number" class="input" id="marksQty">
+            </p>
+            <p class="p" id="createButton">
+                <input type="button" class="button" value="Create table(s)" onclick="createTable()">
+            </p>
+            <p class="p" id="deleteButton">
+                <input type="button" class="button" value="Delete table(s)" onclick="deleteTable()">
+            </p>
+        </div>
+    </form>
+    <script src="task9.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket reservation</title>
+    <link href="task13.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="body">
+    <h1 class="h1">Welcome to the ticket reservation</h1>
+    <form action="/form/submit" method="post" class="container">
+        <div class="div">
+            <label for="departure">From :</label>
+            <select class="select" id="departure">
+                <option value="Kyiv" class="departureOption">Kyiv</option>
+                <option value="Vienne" class="departureOption">Vienne</option>
+                <option value="Barcelona" class="departureOption">Barcelona</option>
+                <option value="Venice" class="departureOption">Venice</option>
+                <option value="Heraklion" class="departureOption">Heraklion</option>
+            </select>
+        </div>
+        <div class="div">
+            <label for="destination">To :</label>
+            <select class="select" id="destination">
+                <option value="Kyiv" class="destinationOption">Kyiv</option>
+                <option value="Vienne" class="destinationOption">Vienne</option>
+                <option value="Barcelona" class="destinationOption">Barcelona</option>
+                <option value="Venice" class="destinationOption">Venice</option>
+                <option value="Heraklion" class="destinationOption">Heraklion</option>
+            </select>
+        </div>
+        <div class="ticketsQtyDiv">
+            <label for="ticketsQty" class="label">Tickets quantity :</label>
+            <input type="number" min="1" placeholder="Choose quantity of tickets..." class="input" id="ticketsQty">
+            <button type="button" class="button" id="reserve">Reserve</button>
+        </div>
+    </form>
+    <div id="tableDiv"></div>
+    <script src="task13.js"></script>
+</body>
+
+</html>

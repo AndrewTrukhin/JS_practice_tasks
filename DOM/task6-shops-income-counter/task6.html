@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task6.css" rel="stylesheet" type="text/css">
+    <title>Shops income counter</title>
+</head>
+
+<body class="body">
+    <h1 class="h1">Welcome to shops income counter</h1>
+    <form action="/form/submit" method="post">
+        <div class="div">
+            <p class="p">
+                <label for="shopsQty" class="label">Shops quantity :</label>
+                <input type="text" class="input" id="shopsQty">
+            </p>
+            <p class="p">
+                <label for="daysQty" class="label">Working days quantity :</label>
+                <input type="text" class="input" id="daysQty">
+            </p>
+            <br>
+            <p class="p" id="firstButtonInline">
+                <input type="button" class="button" value="Create table(s)" onclick="createTable()">
+            </p>
+            <p class="p" id="secondButtonInline">
+                <input type="button" class="button" value="Delete table(s)" onclick="deleteTable()">
+            </p>
+        </div>
+        <div class="div" id="tableDiv">
+            <p class="p">
+                <input type="button" class="button" value="Input income :">
+            </p>
+        </div>
+        <div class="div" id="lastDiv">
+            <p class="p" id="thirdButtonInline">
+                <input type="button" class="button" value="Get total for each shop:" id="eachShopTotal"
+                    onclick="getTotalPerShop()">
+            </p>
+            <p class="p" id="fourthButtonInline">
+                <input type="button" class="button" value="Get total per day:" id="totalForOneDay"  
+                    onclick="getTotalPerDay()">
+            </p>
+        </div>
+    </form>
+    <script src="task6.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway tickets price selection</title>
+    <link href="task7.css" rel="stylesheet" type="text/css">
+    <script src="task7.js"></script>
+</head>
+
+<body>
+    <h1>Railway tickets price selection menu</h1>
+    <form action="/form/submit" method="post">
+        <div>
+            <p>
+                <label for="ticketsQty" class="label">Tickets quantity:</label>
+                <input type="text" name="tickets" id="ticketsQty" width="100">
+            </p>
+            <p>
+                <label for="travelclass" class="label">Choose a class for your trip:</label>
+                <select id="travelclass">
+                    <option selected>Choose a class</option>
+                    <option value="800" class="price">First class - 800.00 UAH</option>
+                    <option value="650" class="price">Second class - 650.00 UAH</option>
+                    <option value="400" class="price">Third class - 400.00 UAH</option>
+                    <option value="200" class="price">Fourth class - 200.00 UAH</option>
+                </select>
+            </p>
+            <p>
+                <input type="button" name="count" value="Count" id="button" onclick="getTicketsQty(); getTotalPrice()">
+            </p>
+            <hr>
+            <p>
+                <label for="totalPayment">Total payment:<input type="text" name="totalPrice"
+                        id="totalPayment">UAH</label>
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>
