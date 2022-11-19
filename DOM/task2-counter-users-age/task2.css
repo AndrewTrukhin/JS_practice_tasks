@@ -1,0 +1,42 @@
+body {
+    background-color: rgba(84, 120, 134, 0.609);
+}
+
+h1 {
+    margin: 10px;
+    font-style: italic;
+}
+
+div {
+    display: inline-block;
+    border: 2px solid black;
+    background-color: burlywood;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#count {
+    margin: 10px;
+    padding: 0 20px;
+    line-height: 2;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(40, 106, 171);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+label {
+    padding-left: 10px;
+    position: absolute;
+}
+
+.data {
+    margin-left: 12em;
+    margin-right: 10px;
+}
+
+.countAge {
+    background-color: gray;
+}

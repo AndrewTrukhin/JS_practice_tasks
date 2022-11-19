@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task2.css" rel="stylesheet" type="text/css">
+    <script src="task2.js"></script>
+    <title>Persons age counter</title>
+</head>
+
+<body>
+    <h1>Persons age counter</h1>
+
+    <form action="/form/submit" method="post">
+        <div>
+            <p>
+                <label for="birth">Enter your birth year:</label>
+                <input type="text" name="birthYear" class="data" id="birth">
+            </p>
+            <p>
+                <label for="age">Your age:</label>
+                <input type="text" name="userAge" class="data" id="age">
+            </p>
+            <p>
+                <input type="button" class="countAge" value="Count!" id="count" onclick="getUserAge()">
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>
