@@ -1,0 +1,44 @@
+body {
+    background-color: rgba(84, 120, 134, 0.609);
+}
+
+.margin {
+    margin: 5px;
+    font-style: italic;
+}
+
+#main {
+    border: black;
+    display: inline-block;
+}
+
+.secondary-div {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+.input {
+    margin-left: 10em;
+}
+
+label {
+    position: absolute;
+}
+
+hr {
+    border: 0.5px solid;
+    color: black;
+}
+
+#lastDiv {
+    display: inline-block;
+}
+
+#notification {
+    margin-top: 5px;
+    border: 1px;
+    border-radius: 5px;
+}

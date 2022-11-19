@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task1.css" rel="stylesheet" type="text/css">
+    <script src="task1.js"></script>
+    <title>Online multipliplication table tester</title>
+</head>
+
+<body>
+    <h1 class="margin">Multiplication Table Tester</h1>
+    <div id="main">
+        <input type="button" value="Generate numbers !" class="margin" onclick="getRandomNums()">
+        <div class="secondary-div">
+            <p>
+                <label for="firstNum">First number</label>
+                <input class="input" name="firstNum" id="firstNum">
+            </p>
+        </div>
+
+        <div class="secondary-div">
+            <p>
+                <label for="secondNum">Second number</label>
+                <input class="input" type="number" name="secondNum" id="secondNum">
+            </p>
+        </div>
+
+        <div class="secondary-div">
+            <p>
+                <label for="answer">Your answer</label>
+                <input type="number" name="answer" id="answer" class="input">
+            </p>
+        </div>
+
+        <div>
+            <form action="/form/submit" method="post">
+                <input type="button" value="Сheck your answer !" class="margin"
+                    onclick="checkMultiplicationResult(); showNotificationAndChangeColor()">
+            </form>
+        </div>
+
+    </div>
+
+    <hr>
+    <div id="lastDiv">
+        <input type="text" name="product" value="" id="result" class="margin">
+        <p id="notification" class="margin"></p>
+    </div>
+</body>
+
+
+</html>
