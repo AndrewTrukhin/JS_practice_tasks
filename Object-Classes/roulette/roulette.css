@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+    table-layout: auto fixed;
+}
+
+tr,
+td {
+    border: 3px solid #337ab7;
+}
+
+td {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-family: cursive;
+    padding: 0;
+}
