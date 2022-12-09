@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+    table-layout: auto fixed;
+}
+
+tr,
+td {
+    border: 3px solid #337ab7;
+}
+
+td {
+    height: 50px;
+    width: 75px;
+    text-align: center;
+    font-family: cursive;
+    padding: 0;
+    background-color: gray;
+}
+
+button {
+    margin-top: 10px;
+    padding: 0 20px;
+    line-height: 2;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(40, 106, 171);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+button:hover {
+    background-color: steelblue;
+}
+
+button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
