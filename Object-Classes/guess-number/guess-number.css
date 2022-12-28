@@ -1,0 +1,83 @@
+body {
+    background-color: steelblue;
+}
+
+.container {
+    font-size: larger;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: skyblue;
+    border: 3px solid rgb(71, 1, 1);
+}
+
+.startBtnDiv {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.playerDiv {
+    display: inline-flexbox;
+    background-color: skyblue;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#randomNumCell {
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 175px;
+    appearance: auto;
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
+}
+
+.scoreLabel {
+    position: absolute;
+    vertical-align: middle;
+}
+
+.answerLabel {
+    position: absolute;
+}
+
+.input {
+    margin-left: 13em;
+    width: 50px;
+}
+
+#resultBtn {
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+button {
+    line-height: 2;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(40, 106, 171);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+button:hover {
+    background-color: steelblue;
+}
+
+button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
